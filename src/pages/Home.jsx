@@ -6,7 +6,7 @@ import Dog from "../assets/images/dog.gif";
 import imageDefault from "../assets/images/imageDefault.webp";
 import Layout from "../components/Layout";
 /* import API_KEY from '../config' */
-const API_KEY = process.env.API_KEY 
+const API_KEY = process.env.REACT_APP_API_KEY 
 async function getNoticias() {
   var url =
     `https://gnews.io/api/v4/search?q=economia OR espectaculo OR politica&lang=es&apikey=${API_KEY}`;
