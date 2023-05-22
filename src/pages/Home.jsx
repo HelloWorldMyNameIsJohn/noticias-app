@@ -5,8 +5,8 @@ import NoticiasCard from "../components/NoticiasCard";
 import Dog from "../assets/images/dog.gif";
 import imageDefault from "../assets/images/imageDefault.webp";
 import Layout from "../components/Layout";
-import API_KEY from '../config'
-
+/* import API_KEY from '../config' */
+const API_KEY = process.env.API_KEY 
 async function getNoticias() {
   var url =
     `https://gnews.io/api/v4/search?q=economia OR espectaculo OR politica&lang=es&apikey=${API_KEY}`;
